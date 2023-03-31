@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="url" value="https://dev57553.service-now.com/"></parameter>
+<parameter name="user_name" value="admin"></parameter>
+<parameter name="user_password" value="2oaD6KN$q$vN"></parameter>
+  <test thread-count="5" name="Test" verbose="3">
+    <classes>
+    <!-- <class name="Project1.KnowledgebaseTestcase"/>  -->
+      <class name="Project1.NewProposal"/>
+      <!-- <class name="Project1.ServiceNowPlaceOrder"/>
+      <class name="Project1.CreateNewCaller"/>  -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
