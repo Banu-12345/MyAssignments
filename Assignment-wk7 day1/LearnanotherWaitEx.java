@@ -24,7 +24,7 @@ public class LearnanotherWaitEx {
         String txt = driver.findElement(By.xpath("//span[text()='I am about to hide']")).getText();
         System.out.println(txt);
         WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(15));
-        wait.until(ExpectedConditions.invisibilityOf(invisible));
+        wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath("//span[text()='I am about to hide']"))));
         
 
 	}
